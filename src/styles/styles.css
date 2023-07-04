@@ -1,0 +1,90 @@
+@media only screen and (max-device-width: 600px) {
+    div#wrapper {
+        width: 400px;
+    }
+  }
+  
+  h1, p, h2, h3 {
+    color: white !important;
+    text-align: center;
+  }
+  
+  p {
+    font-size: 1.5rem;
+  }
+  
+  h1, h2, h3, h4 {
+    filter: drop-shadow(6px 6px 0 rgba(0, 0, 0, 0.4));
+  }
+  
+  h3 {
+    font-size: 25px;
+  }
+  
+  .center-object {
+    display: flex !important;
+  }
+  
+  .btn,
+  input[type="submit"] {
+    border: 0 !important;
+    border-radius: 5px !important;
+    box-sizing: border-box !important;
+    color: #fff !important;
+    cursor: pointer !important;
+    display: inline-block !important;
+    font-size: 16px !important;
+    height: 38px !important;
+    line-height: 38px !important;
+    margin: 0.5em !important;
+    padding: 0 30px !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    white-space: nowrap !important;
+    position: static !important;
+  }
+  
+  .avatar{
+    border-radius: 50% !important;
+    text-align: center !important;
+    padding: 20px;
+    width: 250px;
+  }
+  
+  .background {
+    width: 100% !important;
+    height: 1000px !important;
+    filter: blur(5px) brightness(50%) !important;
+  }
+
+  .d-background {
+    width: 100% !important;
+    height: 1500px !important;
+    filter: blur(3px) brightness(50%) !important;
+  }
+
+  .d-text {
+    color: red !important;
+  }
+
+  .login-dropshadow {
+    background-color: #7289da;
+    filter: drop-shadow(5px 5px 0 rgba(114, 137, 218, 0.6));
+  }
+
+  .stats {
+    padding: 1rem;
+  }
+
+  .DalekPinpoint {
+    font-family: 'Dalek Pinpoint', sans-serif !important;
+  }
+
+  .Battenberg {
+    font-family: 'Battenberg and Custard', sans-serif !important;
+    font-size: 1.5rem !important;
+  }
+
+  .roadrage {
+    font-family: 'Road Rage', sans-serif !important;
+  }
