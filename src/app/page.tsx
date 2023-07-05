@@ -4,7 +4,8 @@ import '../styles/modesta.css';
 
 import Background from '../images/background.png';
 import AboutMe from '../images/aboutme.png';
-import athens from '../images/clubathens.png'
+import athens from '../images/clubathens.png';
+import clubs from '../images/clubsbackground.png';
 import FooterComponent from '@/components/footer';
 
 import Image from 'next/image';
@@ -20,11 +21,23 @@ function Home() {
           <Image src={Background} alt="" className="background"></Image>
             <section className="me">
               <section className="center-object">
-                  <a href="https://discord.com/users/847363776961314817"><img src="https://lanyard.cnrad.dev/api/847363776961314817?bg=23283d&borderRadius=8px" alt=""></img></a><br>
+                  <a href="https://discord.com/users/847363776961314817"><img src="https://lanyard.cnrad.dev/api/847363776961314817?bg=23283d&borderRadius=8px"></img></a><br>
                   </br>
                   <a href="https://github.com/MythicLBQ">
-                    <img src="https://github-readme-stats.vercel.app/api?username=MythicLBQ&count_private=true&show_icons=true&theme=tokyonight&hide_border=true" alt="" height={"226"} className="stats"></img>
-                    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MythicLBQ&theme=tokyonight&layout=compact&hide_border=true" alt="" height={"226"} className="stats"></img>
+                    <picture>
+                      <source
+                        srcSet="https://github-readme-stats.vercel.app/api?username=MythicLBQ&rank_icon=github&theme=transparent&text_color=FFFFFF&title_color=FFFFFF"
+                        media="(prefers-color-scheme: dark)"
+                      />
+                      <img src="https://github-readme-stats.vercel.app/api?username=MythicLBQ&show_icons=true" className="stats" height={250}></img>
+                    </picture>
+                    <picture>
+                      <source 
+                        srcSet="https://github-readme-stats.vercel.app/api/top-langs/?username=MythicLBQ&layout=compact&theme=transparent&text_color=FFFFFF&title_color=FFFFFF"
+                        media="(prefers-color-scheme: dark)"
+                      />
+                      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MythicLBQ&layout=compact" className="stats" height={250}></img>
+                    </picture>
                   </a>
                   <br>
                   </br>
@@ -62,7 +75,7 @@ function Home() {
             <Image src={athens} alt="" className="background"></Image>
             <section className="me">
               <section className="center-object">
-              <h1 className="font-effect-fire DalekPinpoint" >Club Athens</h1>
+              <h1 className="font-effect-fire DalekPinpoint">Club Athens</h1>
                   <p className="Battenberg">Club Athens is a 18+ club and one of my newest projects that is in hardcore development,<br>
                   </br> here within the next couple of weeks I plan to have a world and even a custom club currency that can give you vip access, just by being active within our server!</p>
                   <section className="buttons">
@@ -74,6 +87,26 @@ function Home() {
         </div>
         <br>
         </br>
+        <div className="creditClubs">
+          <div className="fullscreen">
+            <Image src={clubs} alt="" className="background"></Image>
+            <section className="me">
+              <section className="center-object">
+                <h1 className="roadrage">Clubs</h1>
+                <section className="Clubs">
+                  <section className="TRP">
+                    <img src="https://i.imgur.com/1NHq4Yp.png" className="avatar" alt="theroyalphoenix"></img>
+                    <a href="https://discord.gg/royalphoenix" className="btn animation hover discord-dropshadow align-bottom Battenberg">The Royal Phoenix</a>
+                  </section>
+                  <section className="Sanctuary">
+                    <img src="https://i.imgur.com/NM974UM.png" className="SanctuaryImg" alt="clubsanctuary"></img>
+                    <a href="https://discord.gg/p38raBJF2Wx" className="btn animation hover discord-dropshadow align-bottom Battenberg">Club Sanctuary</a>
+                  </section>
+                </section>
+              </section>
+            </section>
+          </div>
+        </div>
         <FooterComponent></FooterComponent>
     </main>
   );
