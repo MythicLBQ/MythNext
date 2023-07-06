@@ -81,9 +81,13 @@
     font-size: 1.5rem !important;
   }
 
-  .roadrage {
+  .roadragebg {
     font-family: 'Road Rage', sans-serif !important;
     filter: drop-shadow(6px 6px 0 rgba(0, 0, 0, 0.4));
+  }
+
+  .roadrage {
+    font-family: 'Road Rage', sans-serif !important;
   }
 
   .jumbotron {

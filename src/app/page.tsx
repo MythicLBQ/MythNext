@@ -1,21 +1,30 @@
-import '../styles/styles.css';
-import '../styles/bootstrap.css';
-import '../styles/modesta.css';
-
 import Background from '../images/background.png';
 import AboutMe from '../images/aboutme.png';
 import athens from '../images/clubathens.png';
 import clubs from '../images/clubsbackground.png';
-import FooterComponent from '@/components/footer';
 
 import Image from 'next/image';
+import Link from 'next/link';
 
 function Home() {
   return (
     <main className="Home">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+            <Link href="/" className="navbar-brand roadragebg">MythicXGN</Link>
+            <div className="collapse navbar-collapse" id="navbarNav">
+                <ul className="navbar-nav">
+                <li className="nav-item active">
+                    <a className="nav-link roadrage" href="/">Home</a>
+                </li>
+                <li className="nav-item">
+                    <a className="nav-link roadrage" href="/kore">Kore</a>
+                </li>
+                </ul>
+            </div>
+        </nav>
         <div className="fullscreen">
         <link href="https://fonts.cdnfonts.com/css/dalek-pinpoint" rel="stylesheet"></link>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire"></link>
+        <link href="https://fonts.googleapis.com/css?family=Sofia&effect=fire" rel="stylesheet"></link>
         <link href="https://fonts.cdnfonts.com/css/battenberg-and-custard" rel="stylesheet"></link>
         <link href="https://fonts.cdnfonts.com/css/road-rage" rel="stylesheet"></link>
           <Image src={Background} alt="" className="background"></Image>
@@ -55,7 +64,7 @@ function Home() {
             <Image src={AboutMe} alt="" className="background"></Image>
             <section className="me">
               <section className="center-object">
-                <h1 className="roadrage">About Me</h1>
+                <h1 className="roadragebg">About Me</h1>
                     <p className="Battenberg">Hi Im Mythic, aka Thomas. Im a 20 year old Developer / World Creator with the passion to make everyones vrchat experience better and more amazing.<br>
                     </br>
                     I love all of the people who support me and if there is any form of benifits you would like to see off of patreon lmk.<br>
@@ -92,7 +101,7 @@ function Home() {
             <Image src={clubs} alt="" className="background"></Image>
             <section className="me">
               <section className="center-object">
-                <h1 className="roadrage">Clubs</h1>
+                <h1 className="roadragebg">Clubs</h1>
                 <section className="Clubs">
                   <section className="TRP">
                     <img src="https://i.imgur.com/1NHq4Yp.png" className="avatar" alt="theroyalphoenix"></img>
@@ -107,7 +116,6 @@ function Home() {
             </section>
           </div>
         </div>
-        <FooterComponent></FooterComponent>
     </main>
   );
 }

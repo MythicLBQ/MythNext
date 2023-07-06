@@ -1,7 +1,3 @@
-import '../styles/styles.css';
-import '../styles/bootstrap.css';
-import '../styles/modesta.css';
-
 function FooterComponent() {    
 	return (        
 		<footer className="roadrage">
