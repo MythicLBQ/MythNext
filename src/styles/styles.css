@@ -11,10 +11,10 @@
     font-size: 25px;
   }
   
-  .center-object {
-    display: flex !important;
+  .a {
+    font-size: 0.5px !important;
   }
-  
+
   .btn,
   input[type="submit"] {
     border: 0 !important;
@@ -31,6 +31,14 @@
     white-space: nowrap !important;
   }
   
+  .center-object {
+    display: block !important;
+  }
+
+  .me {
+    height: inherit !important;
+  }
+
   .avatar{
     border-radius: 50% !important;
     text-align: center !important;
@@ -38,12 +46,19 @@
     width: 250px;
   }
   
+  .me {
+    padding: 0 !important;
+    height: auto;
+    width: auto;
+  }
+
   .background {
-    max-width: 100%;
+    max-width: auto !important;
     filter: blur(5px) brightness(50%) !important;
   }
 
   .stats {
+    max-width:100%;
     padding: 1rem;
   }
 
@@ -63,10 +78,6 @@
 
   .roadrage {
     font-family: 'Road Rage', sans-serif !important;
-  }
-
-  .jumbotron {
-    height: 500px;
   }
 
   .avatar{
@@ -89,19 +100,6 @@
     width: 312px;
   }
 
-  .cinna {
-    width: 50px;
-    height: 50px;
-  }
-
-  .home {
-    padding: 1rem;
-  }
-
-  .kore {
-    padding: 1rem;
-  }
-
   .doIortext {
     font-family: 'George IV', sans-serif;
   }
@@ -118,3 +116,4 @@
   .payhip {
     background-color: #101C7C !important;
   }
+

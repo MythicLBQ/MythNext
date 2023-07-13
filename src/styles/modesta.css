@@ -3430,10 +3430,10 @@ input[type="submit"].hover:hover {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
-.flex-grid [className^="col-xs"]:first-child {
+.flex-grid [class^="col-xs"]:first-child {
   padding-left: 0;
 }
-.flex-grid [className^="col-xs"]:last-child {
+.flex-grid [class^="col-xs"]:last-child {
   padding-right: 0;
 }
 .flex-grid .col-xs {
@@ -4225,6 +4225,55 @@ input[type="submit"].hover:hover {
   top: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
+}
+@media (max-width: 750px) {
+  .markdown-container {
+    padding: 2em 3em;
+  }
+  .paper-container .paper {
+    padding: 40px 28px;
+  }
+  .fullscreen.half .background {
+    height: 100%;
+  }
+  .me {
+    padding: 0;
+  }
+  .me .title {
+    font-size: 10vmin;
+    margin: 0;
+  }
+  .me .image-title {
+    height: 7em;
+    width: 7em;
+  }
+  .me.unset {
+    flex-direction: column;
+  }
+  .buttons {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  .buttons .btn {
+    align-items: center;
+    display: flex;
+    font-size: 18px;
+    justify-content: center;
+    line-height: 20px;
+    padding: 20px 10px;
+    text-align: center;
+    white-space: pre-line;
+    width: calc(45% - 30px);
+  }
+  .buttons .btn i {
+    margin-right: 10px;
+  }
+  .buttons.one-line .btn {
+    padding: 14px 8px;
+    width: 75%;
+  }
 }
 @media screen and (max-width: 650px) {
   .nav-container.default {
